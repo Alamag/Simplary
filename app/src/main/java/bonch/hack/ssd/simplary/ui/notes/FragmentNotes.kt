@@ -9,7 +9,7 @@ import bonch.hack.ssd.simplary.databinding.FragmentNotesBinding
 import bonch.hack.ssd.simplary.ui.base.BaseBindingFragment
 import bonch.hack.ssd.simplary.ui.base.adapter.AdapterListener
 
-class NotesFragment : AdapterListener,
+class FragmentNotes : AdapterListener,
     BaseBindingFragment<FragmentNotesBinding, NotesViewModel>(FragmentNotesBinding::inflate) {
 
     private lateinit var notesViewModel: NotesViewModel

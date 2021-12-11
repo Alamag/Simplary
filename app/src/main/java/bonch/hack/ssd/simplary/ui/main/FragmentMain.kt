@@ -8,9 +8,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import bonch.hack.ssd.simplary.R
 import bonch.hack.ssd.simplary.databinding.FragmentMainBinding
-import bonch.hack.ssd.simplary.ui.profile.FragmentProfile
 import bonch.hack.ssd.simplary.ui.community.FragmentCommunity
 import bonch.hack.ssd.simplary.ui.notes.FragmentNotes
+import bonch.hack.ssd.simplary.ui.profile.FragmentProfile
 import bonch.hack.ssd.simplary.ui.tasks.FragmentTasks
 import java.security.InvalidParameterException
 
