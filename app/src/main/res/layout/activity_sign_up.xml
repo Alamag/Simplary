@@ -12,11 +12,11 @@
         android:id="@+id/signUpTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="36sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
         android:text="@string/register"
         android:textColor="@color/black"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"/>
+        android:textSize="36sp" />
 
 
     <LinearLayout
@@ -33,67 +33,67 @@
             android:id="@+id/nickEditText"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginTop="21dp"
             android:layout_marginLeft="15dp"
+            android:layout_marginTop="21dp"
             android:layout_marginRight="15dp"
-            android:singleLine="true"
-            android:padding="8dp"
             android:background="@drawable/layout_ebg"
             android:ems="10"
             android:hint="@string/login"
-            />
+            android:padding="8dp"
+            android:singleLine="true" />
+
         <EditText
             android:id="@+id/nameEditText"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginTop="21dp"
             android:layout_marginLeft="15dp"
-            android:singleLine="true"
+            android:layout_marginTop="21dp"
             android:layout_marginRight="15dp"
             android:background="@drawable/layout_ebg"
             android:ems="10"
-            android:padding="8dp"
             android:hint="@string/name"
-            />
+            android:padding="8dp"
+            android:singleLine="true" />
+
         <EditText
             android:id="@+id/lastNameEditText"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginTop="21dp"
             android:layout_marginLeft="15dp"
-            android:singleLine="true"
+            android:layout_marginTop="21dp"
             android:layout_marginRight="15dp"
             android:background="@drawable/layout_ebg"
             android:ems="10"
-            android:padding="8dp"
             android:hint="@string/lastName"
-            />
+            android:padding="8dp"
+            android:singleLine="true" />
+
         <EditText
             android:id="@+id/emailEditText"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginTop="21dp"
             android:layout_marginLeft="15dp"
-            android:singleLine="true"
+            android:layout_marginTop="21dp"
             android:layout_marginRight="15dp"
             android:background="@drawable/layout_ebg"
             android:ems="10"
-            android:padding="8dp"
+
             android:hint="@string/email"
-            />
+            android:padding="8dp"
+            android:singleLine="true" />
+
         <EditText
             android:id="@+id/passEditText"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginTop="21dp"
             android:layout_marginLeft="15dp"
-            android:singleLine="true"
+            android:layout_marginTop="21dp"
             android:layout_marginRight="15dp"
             android:background="@drawable/layout_ebg"
             android:ems="10"
-            android:padding="8dp"
             android:hint="@string/password"
-            />
+            android:padding="8dp"
+            android:singleLine="true" />
 
         <EditText
             android:id="@+id/pass2EditText"
@@ -101,12 +101,11 @@
             android:layout_height="40dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="21dp"
-            android:singleLine="true"
             android:layout_marginRight="15dp"
             android:background="@drawable/layout_ebg"
             android:ems="10"
-            android:padding="8dp"
-            android:hint="@string/rePassword" />
+            android:hint="@string/rePassword"
+            android:padding="8dp" />
     </LinearLayout>
 
 
@@ -117,19 +116,20 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="25dp"
         android:background="@drawable/layout_sign_button"
-        android:theme="@style/Button.Our"
         android:text="@string/tryToReg"
         android:textColor="@color/white"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:theme="@style/Button.Our" />
+
     <TextView
         android:id="@+id/checkSignInTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
         android:text="@string/hasAcc"
         android:textColor="@color/black"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"/>
+        android:textSize="14sp" />
 
     <Button
         android:id="@+id/toSignInButton"
@@ -137,11 +137,10 @@
         android:layout_height="40dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="7dp"
-        android:textColor="@color/white"
-        android:theme="@style/Button.Our"
-        android:textSize="16sp"
         android:background="@drawable/layout_sign_button"
-        android:text="@string/signIn" />
-
+        android:text="@string/signIn"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:theme="@style/Button.Our" />
 
 </LinearLayout>
