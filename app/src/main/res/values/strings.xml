@@ -4,6 +4,8 @@
     <string name="title_tasks">Задачи</string>
     <string name="title_notes">Заметки</string>
     <string name="title_profile">Профиль</string>
+
+
     <string name="register">Регистрация</string>
     <string name="login">Логин/Никнейм</string>
     <string name="name">Имя</string>
@@ -14,4 +16,7 @@
     <string name="tryToReg">Зарегистрироваться</string>
     <string name="hasAcc">Уже есть аккаунт в Simplary?</string>
     <string name="signIn">Войти</string>
+    <string name="sign_up_success">Регистрация прошла успешно</string>
+
+
 </resources>

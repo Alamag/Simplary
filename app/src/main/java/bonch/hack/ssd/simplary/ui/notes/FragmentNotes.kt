@@ -2,6 +2,7 @@ package bonch.hack.ssd.simplary.ui.notes
 
 import android.os.Bundle
 import android.view.View
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import bonch.hack.ssd.simplary.databinding.FragmentNotesBinding
@@ -21,12 +22,13 @@ class FragmentNotes : AdapterListener,
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.notesRecyclerView.apply {
-            layoutManager = LinearLayoutManager(context)
-            adapter = listAdapter
+            binding.notesRecyclerView.apply {
+                layoutManager = LinearLayoutManager(context)
+                adapter = listAdapter
             listAdapter.submitList(NotesData.createList())
         }
     }
+
 
 
     override val model: NotesViewModel by viewModels()
