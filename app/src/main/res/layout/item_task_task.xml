@@ -26,16 +26,18 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="10dp"
             android:src="@drawable/checkbox" />
+
         <TextView
             android:id="@+id/taskName"
-            android:text="Task Name"
-            android:layout_marginTop="5dp"
-            android:layout_marginStart="5dp"
-            android:textSize="18sp"
-            android:layout_toEndOf="@id/taskCircleColor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"/>
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/taskCircleColor"
+            android:fontFamily="@font/roboto"
+            android:text="Task Name"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
         <ImageView
             android:id="@+id/taskBell"
@@ -45,26 +47,30 @@
             android:layout_marginTop="15dp"
             android:layout_toEndOf="@id/taskCircleColor"
             android:src="@drawable/ic_notifications_black_24dp" />
+
         <TextView
             android:id="@+id/taskTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/taskBell"
             android:layout_below="@id/taskName"
-            android:layout_marginTop="12dp"
             android:layout_marginStart="5dp"
-            android:textSize="15sp"
-            android:text="text"/>
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@id/taskBell"
+            android:fontFamily="@font/roboto"
+            android:text="text"
+            android:textSize="15sp" />
+
         <TextView
             android:id="@+id/taskCounter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/taskTime"
             android:layout_below="@id/taskName"
-            android:layout_marginTop="12dp"
             android:layout_marginStart="15dp"
-            android:textSize="15sp"
-            android:text="text"/>
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@id/taskTime"
+            android:fontFamily="@font/roboto"
+            android:text="text"
+            android:textSize="15sp" />
         <ImageView
             android:id="@+id/taskSquareComplete"
             android:layout_width="40dp"
