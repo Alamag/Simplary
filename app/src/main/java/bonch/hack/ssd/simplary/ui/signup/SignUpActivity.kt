@@ -1,13 +1,13 @@
-package bonch.hack.ssd.simplary
+package bonch.hack.ssd.simplary.ui.signup
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import bonch.hack.ssd.simplary.databinding.ActivitySignUpBinding
 import android.util.Log
 import android.widget.Toast
+import androidx.lifecycle.ViewModelProvider
 import bonch.hack.ssd.simplary.model.User
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -24,9 +24,15 @@ class SignUpActivity : AppCompatActivity() {
         auth = Firebase.auth
 
         binding = ActivitySignUpBinding.inflate(layoutInflater)
+
+        val signUpViewModel= ViewModelProvider(this).get(SignUpViewModel::class.java)
+
+
         setContentView(binding.root)
 
-        binding.toSignInButton.setOnClickListener {
+
+
+        binding.signUpButton.setOnClickListener {
 
             val email = binding.emailEditText.text.toString()
             val password = binding.passEditText.text.toString()

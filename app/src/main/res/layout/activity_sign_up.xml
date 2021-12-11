@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/bg_primary_color"
     android:orientation="vertical"
-    tools:context=".SignUpActivity">
+    tools:context=".ui.signup.SignUpActivity">
 
     <TextView
         android:id="@+id/signUpTextView"
@@ -26,7 +26,7 @@
         android:layout_marginTop="50dp"
         android:background="@drawable/layout_bg"
         android:orientation="vertical"
-        tools:context=".SignUpActivity">
+        tools:context=".ui.signup.SignUpActivity">
 
 
         <EditText
