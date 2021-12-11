@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "656996382416",
+    "firebase_url": "https://simplary-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "simplary",
     "storage_bucket": "simplary.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "656996382416-3detk14qaumj911hnssqjvbeslvhkgo8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bonch.hack.ssd.simplary",
+            "certificate_hash": "d1b9d9e14c0af721d6a86f4a2d0cf198c3519358"
+          }
+        },
         {
           "client_id": "656996382416-b234feok1figclkhgjmag4b83tvfm3fu.apps.googleusercontent.com",
           "client_type": 1,

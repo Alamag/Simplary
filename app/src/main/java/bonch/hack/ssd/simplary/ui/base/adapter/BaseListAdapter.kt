@@ -3,6 +3,7 @@ package bonch.hack.ssd.simplary.ui.base.adapter
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import bonch.hack.ssd.simplary.ui.notes.NotesFragment
 
 abstract class BaseListAdapter(
     vararg types: Cell<RecyclerItem>,
