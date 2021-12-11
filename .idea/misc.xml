@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1" />
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/drawable/layout_bg.xml" value="0.2703125" />
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/drawable/layout_ebg.xml" value="0.10277777777777777" />
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/drawable/layout_sign_button.xml" value="0.10277777777777777" />
@@ -12,6 +13,8 @@
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/fragment_notes.xml" value="0.264" />
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/fragment_notes_create.xml" value="0.264" />
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/item_notes_recycler_view.xml" value="0.264" />
+        <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/item_task_category.xml" value="0.72" />
+        <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/item_task_task.xml" value="0.136" />
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/layout_bg.xml" value="0.1721014492753623" />
       </map>
     </option>
