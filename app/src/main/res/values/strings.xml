@@ -3,4 +3,14 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="register">Регистрация</string>
+    <string name="login">Логин/Никнейм</string>
+    <string name="name">Имя</string>
+    <string name="lastName">Фамилия</string>
+    <string name="email">Email</string>
+    <string name="password">Пароль</string>
+    <string name="rePassword">Повторите пароль</string>
+    <string name="tryToReg">Зарегистрироваться</string>
+    <string name="hasAcc">Уже есть аккаунт в Simplary?</string>
+    <string name="signIn">Войти</string>
 </resources>

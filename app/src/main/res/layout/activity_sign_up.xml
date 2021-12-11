@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="36sp"
-        android:text="Регистрация"
+        android:text="@string/register"
         android:textColor="@color/black"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"/>
@@ -40,7 +40,7 @@
             android:padding="8dp"
             android:background="@drawable/layout_ebg"
             android:ems="10"
-            android:hint="Логин/Никнейм"
+            android:hint="@string/login"
             />
         <EditText
             android:id="@+id/nameEditText"
@@ -53,7 +53,7 @@
             android:background="@drawable/layout_ebg"
             android:ems="10"
             android:padding="8dp"
-            android:hint="Имя"
+            android:hint="@string/name"
             />
         <EditText
             android:id="@+id/lastNameEditText"
@@ -66,7 +66,7 @@
             android:background="@drawable/layout_ebg"
             android:ems="10"
             android:padding="8dp"
-            android:hint="Фамилия"
+            android:hint="@string/lastName"
             />
         <EditText
             android:id="@+id/emailEditText"
@@ -79,7 +79,7 @@
             android:background="@drawable/layout_ebg"
             android:ems="10"
             android:padding="8dp"
-            android:hint="Email"
+            android:hint="@string/email"
             />
         <EditText
             android:id="@+id/passEditText"
@@ -92,7 +92,7 @@
             android:background="@drawable/layout_ebg"
             android:ems="10"
             android:padding="8dp"
-            android:hint="Пароль"
+            android:hint="@string/password"
             />
 
         <EditText
@@ -106,7 +106,7 @@
             android:background="@drawable/layout_ebg"
             android:ems="10"
             android:padding="8dp"
-            android:hint="Повторите пароль" />
+            android:hint="@string/rePassword" />
     </LinearLayout>
 
 
@@ -118,7 +118,7 @@
         android:layout_marginTop="25dp"
         android:background="@drawable/layout_sign_button"
         android:theme="@style/Button.Our"
-        android:text="Зарегистрироваться"
+        android:text="@string/tryToReg"
         android:textColor="@color/white"
         android:textSize="16sp" />
     <TextView
@@ -126,7 +126,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="14sp"
-        android:text="Уже есть аккаунт в Simplary?"
+        android:text="@string/hasAcc"
         android:textColor="@color/black"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"/>
@@ -141,7 +141,7 @@
         android:theme="@style/Button.Our"
         android:textSize="16sp"
         android:background="@drawable/layout_sign_button"
-        android:text="Войти" />
+        android:text="@string/signIn" />
 
 
 </LinearLayout>
