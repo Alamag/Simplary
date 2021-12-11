@@ -28,21 +28,19 @@ class SignUpActivity : AppCompatActivity() {
         val signUpViewModel= ViewModelProvider(this).get(SignUpViewModel::class.java)
 
 
-        setContentView(binding.root)
 
+        binding.bSignUp.setOnClickListener {
 
-
-        binding.signUpButton.setOnClickListener {
-
-            val email = binding.emailEditText.text.toString()
-            val password = binding.passEditText.text.toString()
-            val passwordRepeated = binding.pass2EditText.text.toString()
+            val email = binding.etEmail.text.toString()
+            val password = binding.etPassword.text.toString()
+            val passwordRepeated = binding.etPasswordRep.text.toString()
 
             if (password == passwordRepeated) {
                 createAccount(email, password)
             }
         }
 
+        setContentView(binding.root)
     }
 
     public override fun onStart() {
@@ -60,9 +58,9 @@ class SignUpActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
 
-                    val login = binding.nickEditText.text.toString()
-                    val name = binding.nameEditText.text.toString()
-                    val lastName = binding.lastNameEditText.text.toString()
+                    val login = binding.etLogin.text.toString()
+                    val name = binding.etName.text.toString()
+                    val lastName = binding.etLastName.text.toString()
 
                     val users = db.collection("Users")
                     val newUser = User(login, name, lastName)
