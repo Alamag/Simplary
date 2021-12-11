@@ -2,12 +2,9 @@ package bonch.hack.ssd.simplary
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
 import bonch.hack.ssd.simplary.databinding.ActivityMainBinding
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import bonch.hack.ssd.simplary.router.Router
+import bonch.hack.ssd.simplary.ui.main.FragmentMain
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,20 +14,25 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        val view = binding.root
+        setContentView(view)
 
-        val navView: BottomNavigationView = binding.navView
+        initFragment()
+    }
 
-        val navController = findNavController(R.id.nav_host_fragment_activity_main)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
-            )
-        )
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
+    override fun onStart() {
+        super.onStart()
+        Router.setFragmentManager(supportFragmentManager)
+    }
 
+    override fun onPause() {
+        Router.setFragmentManager(null)
+        super.onPause()
+    }
+
+    private fun initFragment() {
+        supportFragmentManager.beginTransaction()
+            .add(binding.fragmentContainerView.id, FragmentMain())
+            .commitAllowingStateLoss()
     }
 }

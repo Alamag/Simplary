@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">Simplary</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_community">Сообщество</string>
+    <string name="title_tasks">Задачи</string>
+    <string name="title_notes">Заметки</string>
+    <string name="title_profile">Профиль</string>
     <string name="register">Регистрация</string>
     <string name="login">Логин/Никнейм</string>
     <string name="name">Имя</string>
