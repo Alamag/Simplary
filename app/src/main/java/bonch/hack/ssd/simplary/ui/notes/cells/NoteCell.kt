@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import bonch.hack.ssd.simplary.R
 import bonch.hack.ssd.simplary.databinding.ItemNotesRecyclerViewBinding
 import bonch.hack.ssd.simplary.ui.base.adapter.*
+import bonch.hack.ssd.simplary.ui.notes.adapter.NotesAdapterListener
 
 object NoteCell : Cell<RecyclerItem>() {
 
@@ -28,7 +29,7 @@ object NoteCell : Cell<RecyclerItem>() {
         listener: AdapterListener?
     ) {
        item as Note
-       listener as AdapterListener
+       listener as NotesAdapterListener
         (holder as NoteViewHolder).bind(item,listener)
         Log.d("check", "maybe")
     }

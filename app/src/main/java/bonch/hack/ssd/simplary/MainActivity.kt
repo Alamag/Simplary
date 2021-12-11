@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initFragment() {
         supportFragmentManager.beginTransaction()
-            .add(binding.fragmentContainerView.id, FragmentMain())
+            .add(binding.mainFragmentContainerView.id, FragmentMain())
             .commitAllowingStateLoss()
     }
 }
