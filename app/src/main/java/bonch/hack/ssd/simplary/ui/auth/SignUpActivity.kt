@@ -4,6 +4,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import bonch.hack.ssd.simplary.databinding.ActivitySignUpBinding
 import bonch.hack.ssd.simplary.router.AuthRouter
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class SignUpActivity : AppCompatActivity() {
 
@@ -16,7 +18,12 @@ class SignUpActivity : AppCompatActivity() {
 
         AuthRouter.setFragmentManager(supportFragmentManager)
 
-        AuthRouter.navigateToSignUp()
+
+        if (Firebase.auth.currentUser != null) {
+            AuthRouter.navigateToMainActivity()
+        } else {
+            AuthRouter.navigateToSignUp()
+        }
     }
 
     override fun onDestroy() {
