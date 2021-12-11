@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
-        android:text="Регистрация"
+        android:text="@string/register"
         android:textColor="@color/black"
         android:textSize="36sp" />
 
@@ -38,7 +38,7 @@
             android:layout_marginRight="15dp"
             android:background="@drawable/layout_ebg"
             android:ems="10"
-            android:hint="Логин/Никнейм"
+            android:hint="@string/login"
             android:padding="8dp"
             android:singleLine="true" />
 
@@ -51,7 +51,7 @@
             android:layout_marginRight="15dp"
             android:background="@drawable/layout_ebg"
             android:ems="10"
-            android:hint="Имя"
+            android:hint="@string/name"
             android:padding="8dp"
             android:singleLine="true" />
 
@@ -64,7 +64,7 @@
             android:layout_marginRight="15dp"
             android:background="@drawable/layout_ebg"
             android:ems="10"
-            android:hint="Фамилия"
+            android:hint="@string/lastName"
             android:padding="8dp"
             android:singleLine="true" />
 
@@ -77,7 +77,8 @@
             android:layout_marginRight="15dp"
             android:background="@drawable/layout_ebg"
             android:ems="10"
-            android:hint="Email"
+
+            android:hint="@string/email"
             android:padding="8dp"
             android:singleLine="true" />
 
@@ -90,7 +91,7 @@
             android:layout_marginRight="15dp"
             android:background="@drawable/layout_ebg"
             android:ems="10"
-            android:hint="Пароль"
+            android:hint="@string/password"
             android:padding="8dp"
             android:singleLine="true" />
 
@@ -103,9 +104,8 @@
             android:layout_marginRight="15dp"
             android:background="@drawable/layout_ebg"
             android:ems="10"
-            android:hint="Повторите пароль"
-            android:padding="8dp"
-            android:singleLine="true" />
+            android:hint="@string/rePassword"
+            android:padding="8dp" />
     </LinearLayout>
 
 
@@ -116,7 +116,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="25dp"
         android:background="@drawable/layout_sign_button"
-        android:text="Зарегистрироваться"
+        android:text="@string/tryToReg"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:theme="@style/Button.Our" />
@@ -127,7 +127,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:text="Уже есть аккаунт в Simplary?"
+        android:text="@string/hasAcc"
         android:textColor="@color/black"
         android:textSize="14sp" />
 
@@ -138,10 +138,9 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="7dp"
         android:background="@drawable/layout_sign_button"
-        android:text="Войти"
+        android:text="@string/signIn"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:theme="@style/Button.Our" />
-
 
 </LinearLayout>
