@@ -3,15 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Sergey/AndroidStudioProjects/Simplary/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Sergey/AndroidStudioProjects/Simplary/app/src/main/res/layout/activity_sign_up.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Sergey/AndroidStudioProjects/Simplary/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/drawable/layout_bg.xml" value="0.2703125" />
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/drawable/layout_ebg.xml" value="0.10277777777777777" />
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/drawable/layout_sign_button.xml" value="0.10277777777777777" />
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/activity_main.xml" value="0.16799999999999998" />
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/activity_sign_up.xml" value="0.264" />
-        <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/fragment_dashboard.xml" value="0.264" />
-        <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/fragment_notifications.xml" value="0.264" />
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/layout_bg.xml" value="0.1721014492753623" />
-        <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/notes_recycler_view_item.xml" value="0.264" />
       </map>
     </option>
   </component>
