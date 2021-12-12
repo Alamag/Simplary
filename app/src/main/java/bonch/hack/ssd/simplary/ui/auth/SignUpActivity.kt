@@ -3,14 +3,9 @@ package bonch.hack.ssd.simplary.ui.auth
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import bonch.hack.ssd.simplary.databinding.ActivitySignUpBinding
-import bonch.hack.ssd.simplary.model.UserEntity
 import bonch.hack.ssd.simplary.router.AuthRouter
-import bonch.hack.ssd.simplary.utils.CurrentUser
 import com.google.firebase.auth.ktx.auth
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
-import java.lang.Exception
 
 class SignUpActivity : AppCompatActivity() {
 
@@ -26,10 +21,7 @@ class SignUpActivity : AppCompatActivity() {
         val currentUid = Firebase.auth.currentUser?.uid
 
         currentUid?.let {
-           Firebase.firestore.collection("Users").document(it).get()
-                .addOnSuccessListener {
-                    AuthRouter.navigateToMainActivity()
-                }
+            AuthRouter.navigateToMainActivity()
         } ?: run {
             AuthRouter.navigateToSignUp()
         }

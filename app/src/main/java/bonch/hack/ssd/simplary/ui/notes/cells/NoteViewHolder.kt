@@ -13,7 +13,7 @@ class NoteViewHolder(private val binding: ItemNotesRecyclerViewBinding) : BaseVi
 
     fun bind(note: Note, listener: NotesAdapterListener) {
         binding.title.text = note.title
-        binding.description.text = note.description
+        binding.decription.text = note.description
         binding.root.setOnClickListener{
             listener.click(absoluteAdapterPosition)
         }
