@@ -19,7 +19,7 @@ class PeopleSearchAdapter : RecyclerView.Adapter<PeopleSearchAdapter.SearchPeopl
     override fun onBindViewHolder(holder: SearchPeopleVH, position: Int) {}
 
     override fun getItemCount(): Int {
-        return 9
+        return 12
     }
 
     inner class SearchPeopleVH(private val binding: ItemPeopleSearchBinding) :

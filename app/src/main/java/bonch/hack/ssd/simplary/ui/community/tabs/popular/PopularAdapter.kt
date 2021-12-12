@@ -18,7 +18,7 @@ class PopularAdapter : RecyclerView.Adapter<PopularAdapter.PostVH>() {
 
     override fun onBindViewHolder(holder: PostVH, position: Int) {}
 
-    override fun getItemCount(): Int = 3
+    override fun getItemCount(): Int = 5
 
     inner class PostVH(private val binding: ItemPostBinding) : RecyclerView.ViewHolder(binding.root)
 }
