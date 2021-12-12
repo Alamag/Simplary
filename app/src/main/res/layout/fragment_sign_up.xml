@@ -92,7 +92,8 @@
             android:ems="10"
             android:hint="@string/password"
             android:padding="8dp"
-            android:singleLine="true" />
+            android:singleLine="true"
+            android:inputType="textPassword"/>
 
         <EditText
             android:id="@+id/pass2EditText"
@@ -105,7 +106,7 @@
             android:ems="10"
             android:hint="@string/rePassword"
             android:padding="8dp"
-            android:password="true" />
+            android:inputType="textPassword" />
     </LinearLayout>
 
 
