@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_primary_color"
     android:orientation="vertical">
 
     <TextView
@@ -9,17 +12,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/montserrat_bold"
         android:text="@string/register"
-        android:textColor="@color/black"
-        android:textSize="36sp" />
+        android:textColor="@color/button_color"
+        android:textSize="36sp"
+        android:textStyle="bold" />
 
 
     <LinearLayout
         android:layout_width="305dp"
         android:layout_height="385dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="35dp"
         android:background="@drawable/layout_bg"
         android:orientation="vertical">
 
@@ -99,7 +104,8 @@
             android:background="@drawable/layout_ebg"
             android:ems="10"
             android:hint="@string/rePassword"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:password="true" />
     </LinearLayout>
 
 
@@ -113,7 +119,7 @@
         android:text="@string/tryToReg"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:theme="@style/Button.Our" />
+        app:backgroundTint="@color/button_color" />
 
     <TextView
         android:id="@+id/checkSignInTextView"
@@ -135,6 +141,6 @@
         android:text="@string/signIn"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:theme="@style/Button.Our" />
+        app:backgroundTint="@color/button_color" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

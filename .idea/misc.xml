@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/drawable-v24/ic_back.xml" value="0.1" />
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1" />
+        <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/drawable/ic_baseline_done_24.xml" value="0.1" />
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/drawable/ic_diary.xml" value="0.1" />
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/drawable/layout_bg.xml" value="0.2703125" />
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/drawable/layout_ebg.xml" value="0.10277777777777777" />
@@ -15,11 +17,14 @@
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/fragment_notes.xml" value="0.264" />
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/fragment_notes_create.xml" value="0.152" />
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/fragment_notifications.xml" value="0.1526268115942029" />
+        <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/fragment_sign_in.xml" value="0.152" />
+        <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/fragment_sign_up.xml" value="0.264" />
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/item_notes_recycler_view.xml" value="0.264" />
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/item_task_category.xml" value="0.4" />
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/item_task_task.xml" value="0.152" />
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/layout_bg.xml" value="0.1721014492753623" />
-        <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/toolbar_with_back_btn.xml" value="0.1526268115942029" />
+        <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/toolbar_with_back_and_create_btn.xml" value="0.176" />
+        <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/layout/toolbar_with_back_btn.xml" value="0.264" />
         <entry key="..\:/Users/azhda/AndroidStudioProjects/Simplary/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
       </map>
     </option>

@@ -14,4 +14,7 @@
     <string name="tryToReg">Зарегистрироваться</string>
     <string name="hasAcc">Уже есть аккаунт в Simplary?</string>
     <string name="signIn">Войти</string>
+    <string name="noteTitle">Название заметки</string>
+    <string name="noteDescription">Текст заметки</string>
+    <string name="sign_up_success">Войти</string>
 </resources>
