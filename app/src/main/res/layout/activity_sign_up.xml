@@ -27,7 +27,7 @@
         android:layout_marginTop="50dp"
         android:background="@drawable/layout_bg"
         android:orientation="vertical"
-        tools:context=".ui.signup.SignUpActivity">
+       tools:context=".ui.signup.SignUpActivity">
 
 
         <EditText
