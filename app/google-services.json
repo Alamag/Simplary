@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "656996382416",
+    "firebase_url": "https://simplary-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "simplary",
+    "storage_bucket": "simplary.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:656996382416:android:59abea8fa84699b41dd0d5",
+        "android_client_info": {
+          "package_name": "bonch.hack.ssd.simplary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "656996382416-3detk14qaumj911hnssqjvbeslvhkgo8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bonch.hack.ssd.simplary",
+            "certificate_hash": "d1b9d9e14c0af721d6a86f4a2d0cf198c3519358"
+          }
+        },
+        {
+          "client_id": "656996382416-b234feok1figclkhgjmag4b83tvfm3fu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bonch.hack.ssd.simplary",
+            "certificate_hash": "36dffcfc3efa37776586feadc9c871be9192d51d"
+          }
+        },
+        {
+          "client_id": "656996382416-9o155rfpp8ds9577iddo1bkto1p5lann.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAu1nAFbLc_-Hhp0yIsXkE5mOESR5480Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "656996382416-9o155rfpp8ds9577iddo1bkto1p5lann.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
