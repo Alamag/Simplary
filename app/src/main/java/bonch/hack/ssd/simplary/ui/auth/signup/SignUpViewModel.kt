@@ -22,6 +22,9 @@ class SignUpViewModel : ViewModel() {
 
         SignUp().invoke(user.email, user.pass)
             .addOnSuccessListener {
+                it.user?.let {
+                    user.id = it.uid
+                }
 
                 CreateUserInDatabase().invoke(UserEntity.fromUserData(user))
                     .addOnSuccessListener {
@@ -45,6 +48,7 @@ class SignUpViewModel : ViewModel() {
     }
 
     data class User(
+        var id: String = "",
         val login: String,
         val name: String,
         val lastName: String,

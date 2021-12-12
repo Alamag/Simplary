@@ -3,6 +3,7 @@ package bonch.hack.ssd.simplary.model
 import bonch.hack.ssd.simplary.ui.auth.signup.SignUpViewModel
 
 data class UserEntity(
+    val id: String = "",
     val login: String?,
     val name: String?,
     val lastName: String?,
@@ -15,10 +16,11 @@ data class UserEntity(
     companion object {
         fun fromUserData(user: SignUpViewModel.User): UserEntity {
             return UserEntity(
-                user.login,
-                user.name,
-                user.lastName,
-                user.email
+                id = user.id,
+                login = user.login,
+                name = user.name,
+                lastName = user.lastName,
+                email = user.email
             )
         }
     }
