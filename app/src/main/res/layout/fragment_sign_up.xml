@@ -1,37 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.fragment.app.FragmentContainerView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/auth_fragment_container"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-<<<<<<< HEAD
     android:layout_height="match_parent"
     android:background="@color/bg_primary_color"
-    android:orientation="vertical"
-    tools:context=".ui.signup.SignUpActivity">
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/tv_reg"
+        android:id="@+id/signUpTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/montserrat_bold"
         android:text="@string/register"
-        android:textColor="@color/black"
-        android:textSize="36sp" />
+        android:textColor="@color/button_color"
+        android:textSize="36sp"
+        android:textStyle="bold" />
 
 
     <LinearLayout
         android:layout_width="305dp"
         android:layout_height="385dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="35dp"
         android:background="@drawable/layout_bg"
-        android:orientation="vertical"
-        tools:context=".ui.signup.SignUpActivity">
+        android:orientation="vertical">
 
 
         <EditText
-            android:id="@+id/et_login"
+            android:id="@+id/nickEditText"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="15dp"
@@ -44,7 +43,7 @@
             android:singleLine="true" />
 
         <EditText
-            android:id="@+id/et_name"
+            android:id="@+id/nameEditText"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="15dp"
@@ -57,7 +56,7 @@
             android:singleLine="true" />
 
         <EditText
-            android:id="@+id/et_last_name"
+            android:id="@+id/lastNameEditText"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="15dp"
@@ -70,7 +69,7 @@
             android:singleLine="true" />
 
         <EditText
-            android:id="@+id/et_email"
+            android:id="@+id/emailEditText"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="15dp"
@@ -78,13 +77,12 @@
             android:layout_marginRight="15dp"
             android:background="@drawable/layout_ebg"
             android:ems="10"
-
             android:hint="@string/email"
             android:padding="8dp"
             android:singleLine="true" />
 
         <EditText
-            android:id="@+id/et_password"
+            android:id="@+id/passEditText"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="15dp"
@@ -94,10 +92,11 @@
             android:ems="10"
             android:hint="@string/password"
             android:padding="8dp"
-            android:singleLine="true" />
+            android:singleLine="true"
+            android:inputType="textPassword"/>
 
         <EditText
-            android:id="@+id/et_password_rep"
+            android:id="@+id/pass2EditText"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="15dp"
@@ -106,12 +105,13 @@
             android:background="@drawable/layout_ebg"
             android:ems="10"
             android:hint="@string/rePassword"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:inputType="textPassword" />
     </LinearLayout>
 
 
     <Button
-        android:id="@+id/b_sign_up"
+        android:id="@+id/signUpButton"
         android:layout_width="295dp"
         android:layout_height="40dp"
         android:layout_gravity="center_horizontal"
@@ -120,10 +120,10 @@
         android:text="@string/tryToReg"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:theme="@style/Button.Our" />
+        app:backgroundTint="@color/button_color" />
 
     <TextView
-        android:id="@+id/tv_check_user"
+        android:id="@+id/checkSignInTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -133,7 +133,7 @@
         android:textSize="14sp" />
 
     <Button
-        android:id="@+id/b_sign_in"
+        android:id="@+id/toSignInButton"
         android:layout_width="195dp"
         android:layout_height="40dp"
         android:layout_gravity="center_horizontal"
@@ -142,9 +142,6 @@
         android:text="@string/signIn"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:theme="@style/Button.Our" />
+        app:backgroundTint="@color/button_color" />
 
-</LinearLayout>
-=======
-    android:layout_height="match_parent" />
->>>>>>> origin/sery0077
+</androidx.appcompat.widget.LinearLayoutCompat>
