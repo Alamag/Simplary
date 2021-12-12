@@ -23,6 +23,7 @@
                 android:layout_height="wrap_content"
                 android:text="12.12.2021"
                 android:textSize="24sp"
+                android:textColor="@color/button_color"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
