@@ -25,11 +25,11 @@ class SignUpActivity : AppCompatActivity() {
 
         val currentUid = Firebase.auth.currentUser?.uid
 
-
         currentUid?.let {
            Firebase.firestore.collection("Users").document(it).get()
                 .addOnSuccessListener { docSnapshot ->
-                    CurrentUser.user = docSnapshot.toObject<UserEntity>() ?: throw Exception("Errrrrrror")
+                    CurrentUser.uid = currentUid
+                    CurrentUser.user = docSnapshot.toObject<UserEntity>()!!
 
                     AuthRouter.navigateToMainActivity()
                 }
