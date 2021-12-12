@@ -44,8 +44,8 @@ class FragmentSignIn: BaseBindingFragment<FragmentSignInBinding, SignInViewModel
 
     private fun setClickers() {
         binding.btnSignIn.setOnClickListener {
-            val email: String = binding.etEmail.toString()
-            val pass: String = binding.etPass.toString()
+            val email: String = binding.etEmail.text.toString()
+            val pass: String = binding.etPass.text.toString()
 
             model.onSignInClicked(email, pass)
         }

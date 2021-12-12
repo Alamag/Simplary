@@ -22,19 +22,8 @@ class SignUpViewModel : ViewModel() {
         SignUp().invoke(user.email, user.pass)
             .addOnSuccessListener {
                 it.user?.let { currentUser ->
-                    user.id = currentUser.uid
-                    CurrentUser.uid = currentUser.uid
-
-//                    CreateUserInDatabase().invoke(UserEntity.fromUserData(user))
-//                        .addOnSuccessListener {
-//                            _state.value = SignUpState.Success()
-//
-//                            AuthRouter.navigateToMainActivity()
-//                        }
-//                        .addOnFailureListener {
-//                            _state.value = SignUpState.Error(it.localizedMessage)
-//                            _state.value = SignUpState.Waiting
-//                        }
+                    _state.value = SignUpState.Success()
+                    AuthRouter.navigateToMainActivity()
                 }
             }
             .addOnFailureListener {
