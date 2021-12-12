@@ -17,4 +17,7 @@
     <string name="noteTitle">Название заметки</string>
     <string name="noteDescription">Текст заметки</string>
     <string name="sign_up_success">Войти</string>
+    <string name="tab_subcribed_label">Подписки</string>
+    <string name="tab_popular_label">Популярное</string>
+    <string name="tab_search_label">Поиск</string>
 </resources>
