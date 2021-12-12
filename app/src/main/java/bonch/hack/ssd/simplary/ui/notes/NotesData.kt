@@ -1,8 +1,6 @@
 package bonch.hack.ssd.simplary.ui.notes
 
-import android.app.ActivityManager
-import android.text.Editable
-import bonch.hack.ssd.simplary.ui.base.adapter.*
+import bonch.hack.ssd.simplary.ui.base.adapter.RecyclerItem
 import bonch.hack.ssd.simplary.ui.notes.cells.Note
 
 object NotesData {
@@ -17,7 +15,8 @@ object NotesData {
         )
         return list
     }
-    fun createList(title : String, description: String): List<RecyclerItem> {
+
+    fun createList(title: String, description: String): List<RecyclerItem> {
 
         list.add(
             Note(
@@ -28,8 +27,6 @@ object NotesData {
         )
         return list
     }
-
-
 
 
 }

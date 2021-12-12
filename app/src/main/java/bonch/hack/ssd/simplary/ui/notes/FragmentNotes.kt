@@ -30,7 +30,7 @@ class FragmentNotes : NotesAdapterListener,
             listAdapter.submitList(NotesData.createList())
         }
         val noteButton: FloatingActionButton = binding.fab
-        noteButton.setOnClickListener() {
+        noteButton.setOnClickListener {
             Router.navigateToCreateNewNote("1")
 
             listAdapter.submitList(NotesData.createList())
@@ -44,7 +44,4 @@ class FragmentNotes : NotesAdapterListener,
     }
 
 
-    override fun click(pos: Int) {
-        super.click(pos)
-    }
 }

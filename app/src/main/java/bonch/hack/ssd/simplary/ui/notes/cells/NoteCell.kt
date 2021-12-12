@@ -6,7 +6,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import bonch.hack.ssd.simplary.R
 import bonch.hack.ssd.simplary.databinding.ItemNotesRecyclerViewBinding
-import bonch.hack.ssd.simplary.ui.base.adapter.*
+import bonch.hack.ssd.simplary.ui.base.adapter.AdapterListener
+import bonch.hack.ssd.simplary.ui.base.adapter.Cell
+import bonch.hack.ssd.simplary.ui.base.adapter.RecyclerItem
 import bonch.hack.ssd.simplary.ui.notes.adapter.NotesAdapterListener
 
 object NoteCell : Cell<RecyclerItem>() {
@@ -20,7 +22,13 @@ object NoteCell : Cell<RecyclerItem>() {
     }
 
     override fun holder(parent: ViewGroup): RecyclerView.ViewHolder {
-        return NoteViewHolder(ItemNotesRecyclerViewBinding.inflate(LayoutInflater.from(parent.context),parent,false))
+        return NoteViewHolder(
+            ItemNotesRecyclerViewBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent,
+                false
+            )
+        )
     }
 
     override fun bind(
@@ -28,9 +36,9 @@ object NoteCell : Cell<RecyclerItem>() {
         item: RecyclerItem?,
         listener: AdapterListener?
     ) {
-       item as Note
-       listener as NotesAdapterListener
-        (holder as NoteViewHolder).bind(item,listener)
+        item as Note
+        listener as NotesAdapterListener
+        (holder as NoteViewHolder).bind(item, listener)
         Log.d("check", "maybe")
     }
 

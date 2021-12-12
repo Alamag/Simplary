@@ -1,7 +1,5 @@
 package bonch.hack.ssd.simplary.model
 
-import bonch.hack.ssd.simplary.ui.base.adapter.RecyclerItem
-
 data class UserEntity(
     val login: String,
     val name: String,

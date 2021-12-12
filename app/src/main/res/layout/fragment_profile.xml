@@ -5,20 +5,6 @@
     android:layout_height="match_parent"
     android:background="@color/bg_primary_color">
 
-    <Button
-        android:id="@+id/btn_stats"
-        android:layout_width="195dp"
-        android:layout_height="48dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="48dp"
-        android:background="@drawable/layout_sign_button"
-        android:text="@string/signIn"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:backgroundTint="@color/button_color"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -27,12 +13,10 @@
         android:layout_marginLeft="22dp"
         android:layout_marginTop="44dp"
         android:layout_marginRight="22dp"
-
         app:cardBackgroundColor="@color/bg_secondary_color"
         app:cardCornerRadius="20dp"
         app:cardElevation="10dp"
         app:cardPreventCornerOverlap="false"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">

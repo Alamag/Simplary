@@ -1,15 +1,14 @@
 package bonch.hack.ssd.simplary.ui.tasks
 
 import android.content.res.ColorStateList
-import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import bonch.hack.ssd.simplary.R
 import bonch.hack.ssd.simplary.databinding.ItemTaskCategoryBinding
 import bonch.hack.ssd.simplary.model.Category
 
-class CatsAdapter(private val clickListener: CategoryClickListener): RecyclerView.Adapter<CatsAdapter.CategoryVH>() {
+class CatsAdapter(private val clickListener: CategoryClickListener) :
+    RecyclerView.Adapter<CatsAdapter.CategoryVH>() {
 
     private val categories: ArrayList<Category> = ArrayList()
 
@@ -32,7 +31,8 @@ class CatsAdapter(private val clickListener: CategoryClickListener): RecyclerVie
         return categories.size
     }
 
-    inner class CategoryVH(private val binding: ItemTaskCategoryBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class CategoryVH(private val binding: ItemTaskCategoryBinding) :
+        RecyclerView.ViewHolder(binding.root) {
         fun bind(category: Category) {
             binding.run {
                 categoryText.text = category.name

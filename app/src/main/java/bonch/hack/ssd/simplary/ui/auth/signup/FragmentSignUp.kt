@@ -3,7 +3,6 @@ package bonch.hack.ssd.simplary.ui.auth.signup
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.viewModels
-import bonch.hack.ssd.simplary.R
 import bonch.hack.ssd.simplary.databinding.FragmentSignUpBinding
 import bonch.hack.ssd.simplary.ui.base.BaseBindingFragment
 import bonch.hack.ssd.simplary.utils.ToastHelper
@@ -38,7 +37,7 @@ class FragmentSignUp :
 
             }
             is SignUpState.Success -> {
-                ToastHelper.showShort(requireContext(), getString(R.string.sign_up_success))
+
             }
             SignUpState.Waiting -> {
 
