@@ -8,8 +8,13 @@
 
     <item
         android:id="@+id/tasks"
-        android:icon="@drawable/ic_diary"
+        android:icon="@drawable/ic_tasks"
         android:title="@string/title_tasks" />
+
+    <item
+        android:id="@+id/goals"
+        android:icon="@drawable/ic_goals"
+        android:title="@string/title_goals" />
 
     <item
         android:id="@+id/notes"
@@ -18,7 +23,7 @@
 
     <item
         android:id="@+id/profile"
-        android:icon="@drawable/ic_avatar"
+        android:icon="@drawable/ic_profile"
         android:title="@string/title_profile" />
 
 </menu>

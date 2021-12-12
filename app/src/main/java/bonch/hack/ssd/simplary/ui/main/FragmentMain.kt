@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import bonch.hack.ssd.simplary.R
 import bonch.hack.ssd.simplary.databinding.FragmentMainBinding
+import bonch.hack.ssd.simplary.ui.FragmentGoals
 import bonch.hack.ssd.simplary.ui.community.FragmentCommunity
 import bonch.hack.ssd.simplary.ui.notes.FragmentNotes
 import bonch.hack.ssd.simplary.ui.profile.FragmentProfile
@@ -64,6 +65,7 @@ class FragmentMain : Fragment() {
         if (newFragment == null) {
             val fragment = when (item.itemId) {
                 R.id.community -> FragmentCommunity()
+                R.id.goals -> FragmentGoals()
                 R.id.tasks -> FragmentTasks()
                 R.id.notes -> FragmentNotes()
                 R.id.profile -> FragmentProfile()
