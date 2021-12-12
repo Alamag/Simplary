@@ -3,11 +3,11 @@ package bonch.hack.ssd.simplary.model
 import bonch.hack.ssd.simplary.ui.auth.signup.SignUpViewModel
 
 data class UserEntity(
-    val id: String = "",
-    val login: String?,
-    val name: String?,
-    val lastName: String?,
-    val email: String?,
+    val id: String? = null,
+    val login: String? = null,
+    val name: String? = null,
+    val lastName: String? = null,
+    val email: String? = null,
     val tasks: Map<String, Task>? = emptyMap(),
     val notes: Map<String, Note>? = emptyMap(),
     val goals: Map<String, Goal>? = emptyMap(),
