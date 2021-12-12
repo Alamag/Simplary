@@ -21,9 +21,9 @@ class FragmentNotes : NotesAdapterListener,
 
     // This property is only valid between onCreateView and
     // onDestroyView.
-    private fun setupToolbar(){
+    private fun setupToolbar() {
         binding.toolbar.title.text = getString(R.string.title_notes)
-        binding.toolbar.btnBack.setOnClickListener{
+        binding.toolbar.btnBack.setOnClickListener {
             model.onBackPressed()
         }
         (activity as MainActivity).setSupportActionBar(binding.toolbar.root)
@@ -32,22 +32,23 @@ class FragmentNotes : NotesAdapterListener,
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         binding.notesRecyclerView.apply {
             layoutManager = LinearLayoutManager(context)
             adapter = listAdapter
             listAdapter.submitList(NotesData.createList())
         }
-        val noteButton : FloatingActionButton = binding.fab
-        noteButton.setOnClickListener(){
-            Router.navigateToCreateNewNote("1")
+        listAdapter.submitList(NotesData.createList())
+        val noteButton: FloatingActionButton = binding.fab
+        noteButton.setOnClickListener {
+            Router.navigateToCreateNewNote("0")
         }
         setupToolbar()
     }
 
+
     override fun click(pos: Int) {
         super.click(pos)
-        model.onNoteClicked(pos)
     }
+
     override val model: NotesViewModel by viewModels()
 }
