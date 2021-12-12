@@ -7,7 +7,7 @@
     android:background="@color/bg_primary_color"
     android:gravity="start"
     android:orientation="vertical"
-    tools:context=".ui.auth.SignUpActivity">
+    tools:context=".ui.auth.AuthActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -36,7 +36,7 @@
         android:background="@drawable/layout_bg"
         android:gravity="center"
         android:orientation="vertical"
-        tools:context=".ui.auth.SignUpActivity">
+        tools:context=".ui.auth.AuthActivity">
 
 
         <EditText

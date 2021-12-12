@@ -2,6 +2,7 @@ package bonch.hack.ssd.simplary.ui.notes
 
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import bonch.hack.ssd.simplary.MainActivity
@@ -16,17 +17,12 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 class FragmentNotes : NotesAdapterListener,
     BaseBindingFragment<FragmentNotesBinding, NotesViewModel>(FragmentNotesBinding::inflate) {
 
-    private lateinit var notesViewModel: NotesViewModel
+    override val model: NotesViewModel by viewModels()
+
     private val listAdapter by lazy { NotesAdapter(this) }
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private fun setupToolbar(){
-        binding.toolbar.title.text = getString(R.string.title_notes)
-        binding.toolbar.btnBack.setOnClickListener{
-            model.onBackPressed()
-        }
-        (activity as MainActivity).setSupportActionBar(binding.toolbar.root)
+    private fun setupToolbar() {
+        (activity as AppCompatActivity).setSupportActionBar(binding.toolbar)
     }
 
 
@@ -38,8 +34,8 @@ class FragmentNotes : NotesAdapterListener,
             adapter = listAdapter
             listAdapter.submitList(NotesData.createList())
         }
-        val noteButton : FloatingActionButton = binding.fab
-        noteButton.setOnClickListener(){
+        val noteButton: FloatingActionButton = binding.fab
+        noteButton.setOnClickListener() {
             Router.navigateToCreateNewNote("1")
         }
         setupToolbar()
@@ -49,5 +45,4 @@ class FragmentNotes : NotesAdapterListener,
         super.click(pos)
         model.onNoteClicked(pos)
     }
-    override val model: NotesViewModel by viewModels()
 }

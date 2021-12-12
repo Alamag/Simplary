@@ -7,7 +7,7 @@ import bonch.hack.ssd.simplary.router.AuthRouter
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
-class SignUpActivity : AppCompatActivity() {
+class AuthActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySignUpBinding
 

@@ -2,14 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/tasks"
-        android:icon="@drawable/ic_diary"
-        android:title="@string/title_tasks" />
-
-    <item
         android:id="@+id/community"
         android:icon="@drawable/ic_users"
         android:title="@string/title_community" />
+
+    <item
+        android:id="@+id/tasks"
+        android:icon="@drawable/ic_tasks"
+        android:title="@string/title_tasks" />
+
+    <item
+        android:id="@+id/goals"
+        android:icon="@drawable/ic_goals"
+        android:title="@string/title_goals" />
 
     <item
         android:id="@+id/notes"

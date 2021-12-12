@@ -20,4 +20,5 @@
     <string name="tab_subcribed_label">Подписки</string>
     <string name="tab_popular_label">Популярное</string>
     <string name="tab_search_label">Поиск</string>
+    <string name="title_goals">Цели</string>
 </resources>
