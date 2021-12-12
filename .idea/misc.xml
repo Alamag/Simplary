@@ -3,10 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/Android/Simplary/app/src/main/res/drawable-v24/ic_back.xml" value="0.2203125" />
+        <entry key="..\:/Projects/Android/Simplary/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2203125" />
+        <entry key="..\:/Projects/Android/Simplary/app/src/main/res/drawable/background_et.xml" value="0.21296296296296297" />
+        <entry key="..\:/Projects/Android/Simplary/app/src/main/res/drawable/checkbox_complete.xml" value="0.2203125" />
+        <entry key="..\:/Projects/Android/Simplary/app/src/main/res/drawable/ic_diary.xml" value="0.2203125" />
+        <entry key="..\:/Projects/Android/Simplary/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.2203125" />
+        <entry key="..\:/Projects/Android/Simplary/app/src/main/res/drawable/layout_bg.xml" value="0.21296296296296297" />
+        <entry key="..\:/Projects/Android/Simplary/app/src/main/res/drawable/layout_ebg.xml" value="0.21296296296296297" />
+        <entry key="..\:/Projects/Android/Simplary/app/src/main/res/drawable/layout_sign_button.xml" value="0.21296296296296297" />
         <entry key="..\:/Projects/Android/Simplary/app/src/main/res/layout/activity_main.xml" value="0.12228260869565218" />
         <entry key="..\:/Projects/Android/Simplary/app/src/main/res/layout/activity_sign_in.xml" value="0.18" />
         <entry key="..\:/Projects/Android/Simplary/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="..\:/Projects/Android/Simplary/app/src/main/res/layout/fragment_dashboard.xml" value="0.20416666666666666" />
+        <entry key="..\:/Projects/Android/Simplary/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Projects/Android/Simplary/app/src/main/res/layout/fragment_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Projects/Android/Simplary/app/src/main/res/layout/fragment_new_task.xml" value="0.25" />
+        <entry key="..\:/Projects/Android/Simplary/app/src/main/res/layout/fragment_notes.xml" value="0.33" />
+        <entry key="..\:/Projects/Android/Simplary/app/src/main/res/layout/fragment_notes_create.xml" value="0.25" />
+        <entry key="..\:/Projects/Android/Simplary/app/src/main/res/layout/fragment_notifications.xml" value="0.20416666666666666" />
+        <entry key="..\:/Projects/Android/Simplary/app/src/main/res/layout/fragment_sign_in.xml" value="0.25" />
+        <entry key="..\:/Projects/Android/Simplary/app/src/main/res/layout/fragment_sign_up.xml" value="0.25" />
+        <entry key="..\:/Projects/Android/Simplary/app/src/main/res/layout/item_notes_recycler_view.xml" value="0.33" />
+        <entry key="..\:/Projects/Android/Simplary/app/src/main/res/layout/item_task_category.xml" value="0.5" />
+        <entry key="..\:/Projects/Android/Simplary/app/src/main/res/layout/item_task_task.xml" value="0.5" />
+        <entry key="..\:/Projects/Android/Simplary/app/src/main/res/layout/toolbar_with_back_btn.xml" value="0.20416666666666666" />
+        <entry key="..\:/Projects/Android/Simplary/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
