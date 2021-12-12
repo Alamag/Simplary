@@ -1,16 +1,16 @@
 package bonch.hack.ssd.simplary.ui.notes
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import bonch.hack.ssd.simplary.MainActivity
 import bonch.hack.ssd.simplary.R
-import bonch.hack.ssd.simplary.databinding.FragmentNotesBinding
 import bonch.hack.ssd.simplary.databinding.FragmentNotesCreateBinding
+import bonch.hack.ssd.simplary.router.Router
 import bonch.hack.ssd.simplary.ui.base.BaseBindingFragment
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
 class FragmentNotesCreate : BaseBindingFragment<FragmentNotesCreateBinding, NewNotesViewModel>(
@@ -27,6 +27,11 @@ class FragmentNotesCreate : BaseBindingFragment<FragmentNotesCreateBinding, NewN
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super<BaseBindingFragment>.onViewCreated(view, savedInstanceState)
         setupToolbar()
+        val completeButton : FloatingActionButton = binding.fabComplete
+        completeButton.setOnClickListener(){
+            NotesData.createList(binding.titleEditText.text.toString(), binding.descriptionEditText.text.toString())
+            Router.back()
+        }
     }
 
     companion object {
@@ -39,6 +44,10 @@ class FragmentNotesCreate : BaseBindingFragment<FragmentNotesCreateBinding, NewN
             return fragment
         }
 
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
     }
     override val model: NewNotesViewModel by viewModels()
 }
