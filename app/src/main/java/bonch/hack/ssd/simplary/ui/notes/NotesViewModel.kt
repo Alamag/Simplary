@@ -11,12 +11,14 @@ class NotesViewModel : ViewModel() {
         value = "This is notes Fragment"
     }
     val text: LiveData<String> = _text
-    fun onBackPressed(){
+    fun onBackPressed() {
         Router.back()
     }
+
     var notesData = NotesData.createList()
-    fun onNoteClicked(pos : Int){
-        notesData[pos].id?.let {
-            Router.navigateToCreateNewNote(it) }
+    fun afterCreated() {
+
     }
+
+
 }

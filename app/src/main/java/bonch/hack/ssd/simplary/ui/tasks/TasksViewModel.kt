@@ -6,7 +6,6 @@ import androidx.lifecycle.ViewModel
 import bonch.hack.ssd.simplary.model.Category
 import bonch.hack.ssd.simplary.model.Task
 import bonch.hack.ssd.simplary.repository.TasksRepository
-import bonch.hack.ssd.simplary.utils.notifyObserver
 
 class TasksViewModel : ViewModel() {
 

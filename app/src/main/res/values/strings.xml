@@ -18,6 +18,12 @@
     <string name="noteDescription">Текст заметки</string>
     <string name="sign_up_success">Войти</string>
     <string name="tab_subcribed_label">Подписки</string>
+    <string name="tab_subcribers">Подписчики</string>
     <string name="tab_popular_label">Популярное</string>
     <string name="tab_search_label">Поиск</string>
+    <string name="title_goals">Цели</string>
+    <string name="achievements">Достижения</string>
+    <string name="statistics">Статистика</string>
+    <string name="selfanalysis">Самоанализ</string>
+    <string name="settings">Настройки</string>
 </resources>

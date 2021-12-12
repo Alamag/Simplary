@@ -11,7 +11,8 @@ import bonch.hack.ssd.simplary.ui.community.tabs.search.FragmentSearch
 import bonch.hack.ssd.simplary.ui.community.tabs.subscriptions.FragmentSubscriptions
 import com.google.android.material.tabs.TabLayoutMediator
 
-class FragmentCommunity: BaseBindingFragment<FragmentCommunityBinding, CommunityViewModel>(FragmentCommunityBinding::inflate) {
+class FragmentCommunity :
+    BaseBindingFragment<FragmentCommunityBinding, CommunityViewModel>(FragmentCommunityBinding::inflate) {
     override val model: CommunityViewModel by viewModels()
 
     private var pagerAdapter: CommunityPagerAdapter? = null

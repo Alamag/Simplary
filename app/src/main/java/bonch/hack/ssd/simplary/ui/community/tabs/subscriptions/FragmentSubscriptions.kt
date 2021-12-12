@@ -9,7 +9,7 @@ import bonch.hack.ssd.simplary.R
 import bonch.hack.ssd.simplary.databinding.FragmentCommunityTabBinding
 import bonch.hack.ssd.simplary.ui.community.tabs.popular.PopularAdapter
 
-class FragmentSubscriptions: Fragment(R.layout.fragment_community_tab) {
+class FragmentSubscriptions : Fragment(R.layout.fragment_community_tab) {
 
     private var _binding: FragmentCommunityTabBinding? = null
     private val binding get() = _binding!!

@@ -11,7 +11,8 @@ object Router {
     fun setFragmentManager(fragmentManager: FragmentManager?) {
         this.fragmentManager = fragmentManager
     }
-    fun navigateToCreateNewNote(id : String){
+
+    fun navigateToCreateNewNote(id: String) {
         fragmentManager?.let {
             it.beginTransaction()
                 .add(R.id.main_fragment_container_view, FragmentNotesCreate.newInstance(id))

@@ -10,7 +10,7 @@ class NoteViewHolder(private val binding: ItemNotesRecyclerViewBinding) : BaseVi
         binding.title.text = note.title
         binding.description.text = note.description
         binding.root.setOnClickListener {
-            listener.click(adapterPosition)
+            listener.click(absoluteAdapterPosition)
         }
     }
 

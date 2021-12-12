@@ -9,7 +9,8 @@ import bonch.hack.ssd.simplary.R
 import bonch.hack.ssd.simplary.databinding.ItemTaskTaskBinding
 import bonch.hack.ssd.simplary.model.Task
 
-class TasksAdapter(private val clickListener: TaskClickListener) : RecyclerView.Adapter<TasksAdapter.TaskVH>() {
+class TasksAdapter(private val clickListener: TaskClickListener) :
+    RecyclerView.Adapter<TasksAdapter.TaskVH>() {
 
     private val tasks: ArrayList<Task> = ArrayList()
 
@@ -32,7 +33,8 @@ class TasksAdapter(private val clickListener: TaskClickListener) : RecyclerView.
         return tasks.size
     }
 
-    inner class TaskVH(private val binding: ItemTaskTaskBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class TaskVH(private val binding: ItemTaskTaskBinding) :
+        RecyclerView.ViewHolder(binding.root) {
         fun bind(task: Task) {
             binding.run {
                 taskName.text = task.name

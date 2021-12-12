@@ -2,13 +2,13 @@ package bonch.hack.ssd.simplary.ui.auth.signin
 
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.fragment.app.viewModels
 import bonch.hack.ssd.simplary.databinding.FragmentSignInBinding
 import bonch.hack.ssd.simplary.ui.base.BaseBindingFragment
 import bonch.hack.ssd.simplary.utils.ToastHelper
 
-class FragmentSignIn: BaseBindingFragment<FragmentSignInBinding, SignInViewModel>(FragmentSignInBinding::inflate) {
+class FragmentSignIn :
+    BaseBindingFragment<FragmentSignInBinding, SignInViewModel>(FragmentSignInBinding::inflate) {
 
     companion object {
         fun newInstance(): FragmentSignIn {

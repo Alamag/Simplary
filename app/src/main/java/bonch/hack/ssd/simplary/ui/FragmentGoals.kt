@@ -1,4 +1,4 @@
-package bonch.hack.ssd.simplary.ui.community.tabs.search
+package bonch.hack.ssd.simplary.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,24 +6,25 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import bonch.hack.ssd.simplary.R
-import bonch.hack.ssd.simplary.databinding.FragmentCommunityTabBinding
+import bonch.hack.ssd.simplary.databinding.FragmentGoalsBinding
+import bonch.hack.ssd.simplary.ui.tasks.GoalsAdapter
 
-class FragmentSearch : Fragment(R.layout.fragment_community_tab) {
+class FragmentGoals : Fragment(R.layout.fragment_goals) {
 
-    private var _binding: FragmentCommunityTabBinding? = null
+    private var _binding: FragmentGoalsBinding? = null
     private val binding get() = _binding!!
 
-    private val adapter: PeopleSearchAdapter by lazy { PeopleSearchAdapter() }
+    private val adapter: GoalsAdapter by lazy { GoalsAdapter() }
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentCommunityTabBinding.inflate(inflater, container, false)
+        _binding = FragmentGoalsBinding.inflate(inflater, container, false)
         val view = binding.root
 
-        binding.recyclerCommunity.adapter = adapter
+        binding.recyclerGoals.adapter = adapter
         return view
     }
 

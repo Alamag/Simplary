@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import bonch.hack.ssd.simplary.repository.SignIn
 import bonch.hack.ssd.simplary.router.AuthRouter
 
-class SignInViewModel: ViewModel() {
+class SignInViewModel : ViewModel() {
 
     private val _state: MutableLiveData<SignInState> = MutableLiveData()
     val state: LiveData<SignInState> = _state

@@ -3,7 +3,7 @@ package bonch.hack.ssd.simplary
 import android.app.Application
 import android.content.Context
 
-class App: Application() {
+class App : Application() {
 
     init {
         instance = this
@@ -12,7 +12,7 @@ class App: Application() {
     companion object {
         private var instance: App? = null
 
-        fun applicationContext() : Context {
+        fun applicationContext(): Context {
             return instance!!.applicationContext
         }
     }

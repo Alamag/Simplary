@@ -5,7 +5,6 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import bonch.hack.ssd.simplary.repository.SignUp
 import bonch.hack.ssd.simplary.router.AuthRouter
-import bonch.hack.ssd.simplary.utils.CurrentUser
 
 class SignUpViewModel : ViewModel() {
 
