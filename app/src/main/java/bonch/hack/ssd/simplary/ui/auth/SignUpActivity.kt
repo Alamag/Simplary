@@ -3,9 +3,14 @@ package bonch.hack.ssd.simplary.ui.auth
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import bonch.hack.ssd.simplary.databinding.ActivitySignUpBinding
+import bonch.hack.ssd.simplary.model.UserEntity
 import bonch.hack.ssd.simplary.router.AuthRouter
+import bonch.hack.ssd.simplary.utils.CurrentUser
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
+import java.lang.Exception
 
 class SignUpActivity : AppCompatActivity() {
 
@@ -18,10 +23,17 @@ class SignUpActivity : AppCompatActivity() {
 
         AuthRouter.setFragmentManager(supportFragmentManager)
 
+        val currentUid = Firebase.auth.currentUser?.uid
 
-        if (Firebase.auth.currentUser != null) {
-            AuthRouter.navigateToMainActivity()
-        } else {
+
+        currentUid?.let {
+           Firebase.firestore.collection("Users").document(it).get()
+                .addOnSuccessListener { docSnapshot ->
+                    CurrentUser.user = docSnapshot.toObject<UserEntity>() ?: throw Exception("Errrrrrror")
+
+                    AuthRouter.navigateToMainActivity()
+                }
+        } ?: run {
             AuthRouter.navigateToSignUp()
         }
     }
