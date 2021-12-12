@@ -27,10 +27,7 @@ class SignUpActivity : AppCompatActivity() {
 
         currentUid?.let {
            Firebase.firestore.collection("Users").document(it).get()
-                .addOnSuccessListener { docSnapshot ->
-                    CurrentUser.uid = currentUid
-                    CurrentUser.user = docSnapshot.toObject<UserEntity>()!!
-
+                .addOnSuccessListener {
                     AuthRouter.navigateToMainActivity()
                 }
         } ?: run {

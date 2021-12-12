@@ -3,10 +3,9 @@ package bonch.hack.ssd.simplary.ui.auth.signup
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import bonch.hack.ssd.simplary.model.UserEntity
-import bonch.hack.ssd.simplary.repository.CreateUserInDatabase
 import bonch.hack.ssd.simplary.repository.SignUp
 import bonch.hack.ssd.simplary.router.AuthRouter
+import bonch.hack.ssd.simplary.utils.CurrentUser
 
 class SignUpViewModel : ViewModel() {
 
@@ -22,20 +21,21 @@ class SignUpViewModel : ViewModel() {
 
         SignUp().invoke(user.email, user.pass)
             .addOnSuccessListener {
-                it.user?.let {
-                    user.id = it.uid
+                it.user?.let { currentUser ->
+                    user.id = currentUser.uid
+                    CurrentUser.uid = currentUser.uid
+
+//                    CreateUserInDatabase().invoke(UserEntity.fromUserData(user))
+//                        .addOnSuccessListener {
+//                            _state.value = SignUpState.Success()
+//
+//                            AuthRouter.navigateToMainActivity()
+//                        }
+//                        .addOnFailureListener {
+//                            _state.value = SignUpState.Error(it.localizedMessage)
+//                            _state.value = SignUpState.Waiting
+//                        }
                 }
-
-                CreateUserInDatabase().invoke(UserEntity.fromUserData(user))
-                    .addOnSuccessListener {
-                        _state.value = SignUpState.Success()
-
-                        AuthRouter.navigateToMainActivity()
-                    }
-                    .addOnFailureListener {
-                        _state.value = SignUpState.Error(it.localizedMessage)
-                        _state.value = SignUpState.Waiting
-                    }
             }
             .addOnFailureListener {
                 _state.value = SignUpState.Error(it.localizedMessage)
